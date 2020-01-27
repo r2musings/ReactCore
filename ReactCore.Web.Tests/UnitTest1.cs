@@ -1,3 +1,5 @@
+using Xunit;
+
 namespace ReactCore.Web.Tests
 {
     public class UnitTest1
