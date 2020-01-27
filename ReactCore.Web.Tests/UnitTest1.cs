@@ -1,17 +1,14 @@
-using System;
-using Xunit;
-
 namespace ReactCore.Web.Tests
 {
     public class UnitTest1
     {
-        [Fact]
+        [Fact(DisplayName = "One Equals One")]
         public void TestOneEqualsOne()
         {
             Assert.Equal(1, 1);
         }
 
-        [Theory]
+        [Theory(DisplayName = "Value Equals Itself")]
         [InlineData(2, 2, true)]
         [InlineData(2, 3, false)]
         public void TestValueEqualsItself(int valueA, int valueB, bool isEqualExpected)
